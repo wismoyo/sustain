@@ -7726,7 +7726,8 @@ th.hide-for-touch {
 /* ------------------------------------------------------------ *	block
 \* ------------------------------------------------------------ */
 .block {
-  margin-bottom: 48px; }
+  margin-bottom: 10px; }
+
   .block .block-title {
     font-size: 16px;
     font-weight: 900;
@@ -8336,22 +8337,28 @@ ul.pagination {
   background-color: #ffee00;
 }
 
-  @media (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+    .front-block-4, .front-block-3, .front-block-4, .front-block-4 {
+      height: auto; } }
+
+@media only screen and (min-width: 768px) {
     .front-block-4, .front-block-3, .front-block-4, .front-block-4 {
       height: auto; } }
 
 h3.rtecenter {
   padding: auto;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
+  font-size: 1.2rem;
 }
 
 .owl-item .views-field-title,.owl-item .views-field-body {
   position: relative;
-  top: -27em;
-  left: 55%;
+  top: -16em;
+  left: 52%;
   z-index: 99;
-  width: 55%;
+  width: 44%;
+  height: auto;
 }
 
 .title-slider {
@@ -8391,25 +8398,34 @@ img.logo {
   margin-bottom: 5%;
 }
 
-.view-media-coverage .views-field-title,.view-media-coverage .views-field-body {
+/* Disable dulu karna berefek ke yang lain
+.view-media-coverage .views-field-title,.view-media-coverage .views-field-body */
+
+.blok-mc-front {
   position: relative;
-top:-20em;
-left: 3em;
-z-index: 99;
-width: 50%;
-text-align: left;
-text-transform: uppercase;
-color: #ffffff;
+  bottom:20em;
+  left: auto;
+  z-index: 99;
+  width: 40%;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
 }
-.view-media-coverage .views-field-title h3 a{
+.title-mediacov-front a:hover,
+.blok-mc-front a:hover {
   color: #ffffff;
 }
 
-h3.rtecenter {
-  font-size: 15px;
+.body-mediacov-front {
+  width: 50%;
+  font-size:1rem;
+  color: #111;
 }
-.triptych-middle{
-  height: 570px;
+
+/*Kalo di layar gede only*/
+@media only screen and (min-width: 768px) {
+.triptych-middle {
+  min-height: 570px;
   border: 1px solid #f4f4f4;
   background-color: #ffffff;
   width: 23%;
@@ -8419,12 +8435,11 @@ h3.rtecenter {
   margin-top: 15%;
   margin-left: 11%;
   margin-bottom: 13%;
-  font-size: 14px;
   color: #fff06b;
 }
 .triptych-middle .view-content .item-list ul li{
   list-style-type: none;
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-bottom: 10%;
 }
 .triptych-middle .view-content .item-list ul li a{
@@ -8432,8 +8447,8 @@ h3.rtecenter {
   text-decoration: underline;
 }
 
-.triptych-last{
-  height: 570px;
+.triptych-last {
+  min-height: 570px;
   border: 1px solid #f4f4f4;
   background-color: #ffffff;
   width: 23%;
@@ -8443,20 +8458,22 @@ h3.rtecenter {
   margin-top: 15%;
   margin-left: 11%;
   margin-bottom: 13%;
-  font-size: 14px;
   color: #fff06b;
 }
 .triptych-last .view-content .item-list ul li{
   list-style-type: none;
-  font-size: 20px;
+  font-size: 1.2rem;
   margin-bottom: 10%;
 }
 .triptych-last .view-content .item-list ul li a{
   color: #000000;
   text-decoration: underline;
+ }
 }
+
 .block-views-slider-slideshow-block{
-  height: 35em;
+  height: auto;
+  margin-bottom: -5em;
 }
 .panel.callout{
   background-color: transparent;
@@ -8469,7 +8486,7 @@ h3.rtecenter {
 
   /*Logo Supporters*/
 .logo-supporter img {
-  max-height: 10em;
+  max-height: 9em;
   width: auto;
   padding: 10px;
   }
@@ -8479,4 +8496,3 @@ section.row.l-footer-columns.footer {
     background-color: #333;
     padding: 1em;
 }
-
