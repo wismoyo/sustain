@@ -6,12 +6,12 @@ core = 7.x
 engine = phptemplate
 base theme = zurb_foundation
 
-; Block loading of foundation.min.css from the base theme. This file should either
-; not exist or be blank in your subtheme. See https://drupal.org/node/263967
+; CSS Styles
 stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/foundation.min.css
 stylesheets[all][] = css/sustain.css
 stylesheets[all][] = fonts/foundation-icons/foundation-icons.css
+stylesheets[all][] = css/etc.css
 
 ; Foundation JavaScript.
 
@@ -28,8 +28,6 @@ scripts[] = js/foundation.min.js
 scripts[] = js/app.min.js
 
 ; Regions[header] = Header
-; You'll use this variable in page.tpl.php:
-;   <?php print render($page['header']); ?>
 
 regions[header]              = Header
 regions[help]                = Help
@@ -46,10 +44,7 @@ regions[footer_firstcolumn]  = Footer one
 regions[footer_secondcolumn] = Footer two
 regions[footer_thirdcolumn]  = Footer three
 regions[footer]              = Footer
-
-; Specific regions in frontpage / home
-;regions[branding_logo]       = Branding Logo
-;regions[main_menu]           = Main Menu
+regions[footer_menu]         = Footer Menu
 
 ; Panel Layouts
 plugins[panels][layouts] = layouts
