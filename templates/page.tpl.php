@@ -179,7 +179,6 @@
 
   <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn'])): ?>
     <!--.footer-columns -->
-    <div class="footer-body">
     <section class="row l-footer-columns footer">
       <?php if (!empty($page['footer_firstcolumn'])): ?>
         <div class="footer-first medium-4 columns">
