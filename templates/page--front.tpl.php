@@ -166,7 +166,6 @@
 
   <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn'])): ?>
     <!--.footer-columns -->
-    <div class="footer-body">
     <section class="row l-footer-columns footer">
       <?php if (!empty($page['footer_firstcolumn'])): ?>
         <div class="footer-first medium-4 columns">
@@ -185,7 +184,6 @@
       <?php endif; ?>
     </section>
     <!--/.footer-columns-->
-  </div>
   <?php endif; ?>
 
   <!--.l-footer -->
@@ -197,8 +195,13 @@
     <?php endif; ?>
 
     <?php if ($site_name) : ?>
-      <div class="copyright columns">
+      <div class="copyright medium-5 columns">
         &copy; <?php print date('Y') . ' ' . $site_name . ' ' . t('All rights reserved.'); ?>
+      </div>
+    <?php endif; ?>
+        <?php if (!empty($page['footer'])): ?>
+      <div class="footer-menu medium-7 columns">
+        <?php print render($page['footer_menu']); ?>
       </div>
     <?php endif; ?>
   </footer>
