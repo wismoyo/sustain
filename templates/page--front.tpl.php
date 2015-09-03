@@ -150,16 +150,22 @@
 
   <?php if (!empty($page['triptych_first']) || !empty($page['triptych_middle']) || !empty($page['triptych_last'])): ?>
     <!--.triptych-->
-    <section class="l-triptych row">
-      <div class="triptych-first medium-6 columns">
-        <?php print render($page['triptych_first']); ?>
-      </div>
-      <div class="triptych-middle medium-3 columns">
-        <?php print render($page['triptych_middle']); ?>
-      </div>
-      <div class="triptych-last medium-3 columns">
-        <?php print render($page['triptych_last']); ?>
-      </div>
+    <section class="row l-triptych">
+      <?php if (!empty($page['triptych_first'])): ?>
+        <div class="triptych-first medium-6 columns">
+          <?php print render($page['triptych_first']); ?>
+        </div>
+      <?php endif; ?>
+      <?php if (!empty($page['triptych_middle'])): ?>
+        <div class="triptych-middle medium-3 columns">
+          <?php print render($page['triptych_middle']); ?>
+        </div>
+      <?php endif; ?>
+      <?php if (!empty($page['triptych_last'])): ?>
+        <div class="triptych-last medium-3 columns">
+          <?php print render($page['triptych_last']); ?>
+        </div>
+      <?php endif; ?>
     </section>
     <!--/.triptych -->
   <?php endif; ?>
