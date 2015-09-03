@@ -16,10 +16,9 @@ stylesheets[all][] = css/etc.css
 ; Foundation JavaScript.
 
 ; External libraries used by Foundation (minified). Add more via Gruntfile.js.
-scripts[] = js/libs.min.js
+;scripts[] = js/libs.min.js
 
 ; Foundation framework scripts (minified).
-; Control specific components via Gruntfile.js.
 scripts[] = js/foundation.min.js
 
 ; Theme scripts (minified).
