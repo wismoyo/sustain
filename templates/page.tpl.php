@@ -207,8 +207,13 @@
     <?php endif; ?>
 
     <?php if ($site_name) : ?>
-      <div class="copyright columns">
+      <div class="copyright medium-5 columns">
         &copy; <?php print date('Y') . ' ' . $site_name . ' ' . t('All rights reserved.'); ?>
+      </div>
+    <?php endif; ?>
+        <?php if (!empty($page['footer'])): ?>
+      <div class="footer-menu medium-7 columns">
+        <?php print render($page['footer_menu']); ?>
       </div>
     <?php endif; ?>
   </footer>
