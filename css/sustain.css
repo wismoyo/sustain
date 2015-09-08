@@ -81,7 +81,7 @@ body {
   background: #f7f7f7;
   color: #75737f;
   cursor: auto;
-  font-family: "Lato", sans-serif;
+  font-family: "Museo", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -969,7 +969,7 @@ select {
       background: #EFEFEF;
       color: #222222;
       display: block;
-      font-family: "Lato", sans-serif;
+      font-family: "Museo", sans-serif;
       font-size: 1.14286rem;
       padding: 1.14286rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
@@ -1371,7 +1371,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Lato", sans-serif;
+  font-family: "Museo", sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.42857rem;
@@ -3406,7 +3406,7 @@ kbd {
 
 .label {
   display: inline-block;
-  font-family: "Lato", sans-serif;
+  font-family: "Museo", sans-serif;
   font-weight: normal;
   line-height: 1;
   margin-bottom: auto;
@@ -3797,7 +3797,7 @@ button:focus {
   .pricing-table .title {
     background-color: #333333;
     color: #EEEEEE;
-    font-family: "Lato", sans-serif;
+    font-family: "Museo", sans-serif;
     font-size: 1.14286rem;
     font-weight: normal;
     padding: 1.07143rem 1.42857rem;
@@ -3805,7 +3805,7 @@ button:focus {
   .pricing-table .price {
     background-color: #F6F6F6;
     color: #333333;
-    font-family: "Lato", sans-serif;
+    font-family: "Museo", sans-serif;
     font-size: 2.28571rem;
     font-weight: normal;
     padding: 1.07143rem 1.42857rem;
@@ -4059,7 +4059,7 @@ button:focus {
 
 .side-nav {
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: "Museo", sans-serif;
   list-style-position: outside;
   list-style-type: none;
   margin: 0;
@@ -4081,7 +4081,7 @@ button:focus {
         color: #1cc7ff; }
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
-      font-family: "Lato", sans-serif;
+      font-family: "Museo", sans-serif;
       font-weight: normal; }
     .side-nav li.divider {
       border-top: 1px solid;
@@ -4201,7 +4201,7 @@ button:focus {
   .sub-nav li {
     color: #999999;
     float: left;
-    font-family: "Lato", sans-serif;
+    font-family: "Museo", sans-serif;
     font-size: 1rem;
     font-weight: normal;
     margin-left: 1.14286rem;
@@ -4396,7 +4396,7 @@ table {
       display: block;
       background-color: #EFEFEF;
       color: #222222;
-      font-family: "Lato", sans-serif;
+      font-family: "Museo", sans-serif;
       font-size: 1.14286rem;
       padding: 1.14286rem 2.28571rem; }
       .tabs dd > a:hover,
@@ -4712,7 +4712,7 @@ meta.foundation-mq-topbar {
     .top-bar-section ul li > a {
       color: #FFFFFF;
       display: block;
-      font-family: "Lato", sans-serif;
+      font-family: "Museo", sans-serif;
       font-size: 0.92857rem;
       font-weight: normal;
       padding-left: 1.07143rem;
@@ -5274,7 +5274,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #27262c;
-  font-family: "Lato", sans-serif;
+  font-family: "Museo", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -8359,17 +8359,32 @@ h3.rtecenter {
   z-index: 99;
   width: 44%;
   height: auto;
+  color:#fffff7;
+  background-color: #FFEE36;
+  padding: 5px;
+  ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";       /* IE 8 */
+  filter: alpha(opacity=80);  /* IE 5-7 */
+  -moz-opacity: 0.8;          /* Netscape */
+  -khtml-opacity: 0.8;        /* Safari 1.x */
+  opacity: 0.8;               /* Good browsers */
 }
 
+@media only screen and (min-width: 767px) {
 .title-slider {
   text-transform: uppercase;
+  font-size: 1.2em;
   font-weight: 800;
-  background-color: #ffea33;
-  padding: 4px;
+  background-color: #FFEE36;
+  padding: 5px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title-slider {
+  display:none; }
 }
 
 img.logo {
-  margin-top: 10px;
+  margin: 10px;
 }
 
 #main-menu-links {
@@ -8471,18 +8486,35 @@ img.logo {
  }
 }
 
-.block-views-slider-slideshow-block{
+.block-views-slider-slideshow-block {
   height: auto;
   margin-bottom: -5em;
 }
+@media only screen and (max-width: 767px) {
+  .block-views-slider-slideshow-block {
+  margin-top: 10px;
+  margin-bottom: -8em }
+}
+
 .panel.callout{
   background-color: transparent;
   border: none;
+  top:-2em;
   margin-bottom: 0;
   padding-bottom: 1em;
 }
+
 .l-triptych{
   }
+
+.views-field.views-field-field-news-image,
+.views-field.views-field-field-media-cover-image {
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+}
+
 
   /*Logo Supporters*/
 .logo-supporter img {

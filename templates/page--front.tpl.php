@@ -205,8 +205,8 @@
         &copy; <?php print date('Y') . ' ' . $site_name . ' ' . t('All rights reserved.'); ?>
       </div>
     <?php endif; ?>
-        <?php if (!empty($page['footer'])): ?>
-      <div class="footer-menu medium-7 columns">
+        <?php if (!empty($page['footer_menu'])): ?>
+      <div class="footer-menu medium-7 links columns">
         <?php print render($page['footer_menu']); ?>
       </div>
     <?php endif; ?>
