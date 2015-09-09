@@ -34,13 +34,13 @@
     <?php if ($alt_header): ?>
       <section class="row <?php print $alt_header_classes; ?>">
 
-        <div id="logo" class="medium-3 columns">
+        <div id="logo" class="medium-4 columns">
           <?php if ($linked_logo): print $linked_logo; endif; ?>
         </div>
 
         <?php if ($site_name): ?>
           <?php if ($title): ?>
-            <div id="site-name" class="element-invisible medium-3 columns">
+            <div id="site-name" class="element-invisible medium-4 columns">
               <strong>
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
               </strong>
@@ -49,17 +49,17 @@
         <?php endif; ?>
 
         <?php if ($site_slogan): ?>
-          <h2 title="<?php print $site_slogan; ?>" class="site-slogan element-invisible medium-3 columns"><?php print $site_slogan; ?></h2>
+          <h2 title="<?php print $site_slogan; ?>" class="site-slogan element-invisible medium-4 columns"><?php print $site_slogan; ?></h2>
         <?php endif; ?>
 
         <?php if ($alt_main_menu): ?>
-          <nav id="main-menu" class="navigation medium-9 columns" role="navigation">
+          <nav id="main-menu" class="navigation medium-8 columns" role="navigation">
             <?php print ($alt_main_menu); ?>
           </nav> <!-- /#main-menu -->
         <?php endif; ?>
 
         <?php if ($alt_secondary_menu): ?>
-          <nav id="secondary-menu" class="navigation medium-9 columns" role="navigation">
+          <nav id="secondary-menu" class="navigation medium-8 columns" role="navigation">
             <?php print $alt_secondary_menu; ?>
           </nav> <!-- /#secondary-menu -->
         <?php endif; ?>

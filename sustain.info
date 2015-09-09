@@ -8,7 +8,8 @@ base theme = zurb_foundation
 
 ; CSS Styles
 stylesheets[all][] = css/normalize.css
-stylesheets[all][] = css/foundation.min.css
+;stylesheets[all][] = css/foundation.min.css
+stylesheets[all][] = css/sustain-foundation.css
 stylesheets[all][] = css/sustain.css
 stylesheets[all][] = fonts/foundation-icons/foundation-icons.css
 stylesheets[all][] = css/etc.css
