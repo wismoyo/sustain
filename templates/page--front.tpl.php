@@ -91,26 +91,6 @@
     <!--/.l-featured -->
   <?php endif; ?>
 
-  <?php if ($messages && !$zurb_foundation_messages_modal): ?>
-    <!--.l-messages -->
-    <section class="l-messages row">
-      <div class="columns">
-        <?php if ($messages): print $messages; endif; ?>
-      </div>
-    </section>
-    <!--/.l-messages -->
-  <?php endif; ?>
-
-  <?php if (!empty($page['help'])): ?>
-    <!--.l-help -->
-    <section class="l-help row">
-      <div class="columns">
-        <?php print render($page['help']); ?>
-      </div>
-    </section>
-    <!--/.l-help -->
-  <?php endif; ?>
-
   
   <?php if (!empty($page['highlighted'])): ?>
      <section class="l-highlight row">
@@ -135,13 +115,13 @@
     <!--/.l-main region -->
 
     <?php if (!empty($page['sidebar_first'])): ?>
-      <aside role="complementary" class="<?php print $sidebar_first_grid; ?> sidebar-first columns sidebar">
+      <aside role="complementary" class="<?php print $sidebar_first_grid; ?> sidebar-first columns">
         <?php print render($page['sidebar_first']); ?>
       </aside>
     <?php endif; ?>
 
     <?php if (!empty($page['sidebar_second'])): ?>
-      <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns sidebar">
+      <aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns">
         <?php print render($page['sidebar_second']); ?>
       </aside>
     <?php endif; ?>

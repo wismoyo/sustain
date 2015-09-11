@@ -123,8 +123,6 @@
 
       <a id="main-content"></a>
 
-      <?php if ($breadcrumb): print $breadcrumb; endif; ?>
-
       <?php if ($title): ?>
         <?php print render($title_prefix); ?>
         <div id="title-area">
