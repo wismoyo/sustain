@@ -1552,6 +1552,18 @@
 
 /*# sourceMappingURL=style.css.map */
 
+/************************************************************** CUSTOM LAGI ***************************/
+
+table tr th, table tr td {
+    color: #ffffff;
+    background: transparent;
+}
+
+.tbody, tbody {
+  border: none;
+  border-top: none;
+}
+
 /*Frontmap*/
 .frontmap {
   padding: auto;
@@ -1896,4 +1908,9 @@ ul.quicktabs-tabs.quicktabs-style-arrows a {
 
 .views-column {
     margin-top: 2em;
+}
+
+.block-views-media-coverage-block-1 {
+  max-height: 47em;
+  margin-bottom: -6em;
 }
