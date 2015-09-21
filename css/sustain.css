@@ -1728,7 +1728,7 @@ img.logo {
 /*Kalo di layar gede only*/
 @media only screen and (min-width: 768px) {
 .triptych-middle {
-  min-height: 570px;
+  min-height: 635px;
   border: 1px solid #f4f4f4;
   background-color: #ffffff;
 }
@@ -1748,8 +1748,9 @@ img.logo {
   text-decoration: underline;
 }
 
-.triptych-last {
-  min-height: 570px;
+.triptych-last,
+.triptych-first {
+  min-height: 635px;
   border: 1px solid #f4f4f4;
 }
 
@@ -1774,6 +1775,35 @@ section.block.block-views.block-views-event-block {
   color: #000000;
   text-decoration: underline;
  }
+
+/*Block flexslider in frontpage*/
+h3.slideshow-event-title.block-title {
+    margin: auto;
+    background-color: #ffffff;
+    padding: 1em;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.flexslider {
+    margin: 0;
+    padding:2px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-top: none;
+    position: relative;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -o-border-radius: none;
+    border-radius: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    zoom: 1;
+}
+
 }
 
 .block-views-slider-slideshow-block {
@@ -1800,8 +1830,8 @@ section.block.block-views.block-views-event-block {
   padding-bottom: 1em;
 }
 
-.views-field.views-field-field-news-image,
-.views-field.views-field-field-media-cover-image {
+.views-field.views-field-field-news-image
+/*.views-field.views-field-field-media-cover-image */{
     float: left;
     margin-top: 5px;
     margin-right: 10px;
@@ -1928,6 +1958,7 @@ h1#page-title {
 
 .views-column {
     margin-top: 2em;
+    margin-bottom: 1.2em;
 }
 
 .block-views-media-coverage-block-1 {
@@ -2122,6 +2153,43 @@ ul.quicktabs-tabs.quicktabs-style-arrows a {
   border: 1px #eee solid;
 }
 
-
+a.button.tiny.latest-progress {
+    width: 100%;
+    border: 1.5px solid #FFEA00;
+    /* height: 4em; */
+    background-color: #fff;
+}
+a:hover.button.tiny.latest-progress {
+  background: #fa6f1c;
 }
 
+.addtoany {
+    display: inline;
+    background-color: #f7f7f7;
+    padding: 1em 0.4em 1.2em 0.4em;
+}
+
+ul.links.inline {
+    margin-left: 0;
+    margin-top: 5px;
+}
+
+
+}/*closing @media */
+
+.block-views-clone-of-archive-block {
+    background: #fff;
+    padding: 1em;
+}
+
+
+.related-event-block {
+  background: #ffffff;
+}
+
+h3.related-event-block-title {
+    background-color: #333333;
+    color: #FFEA00;
+    padding: 1em;
+    margin-bottom: -1em;
+}

@@ -41,7 +41,7 @@
     <?php print render($content['field_tags']) ?>
   <?php endif; ?>
 
-  <?php print render($content['links']); ?>
+  <div class="share-this">Share this: <?php print render($content['links']); ?> </div>
   <?php print render($content['comments']); ?>
   
   </div
